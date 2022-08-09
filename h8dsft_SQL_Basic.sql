@@ -97,15 +97,15 @@ GROUP BY teachers.id
 /* C2.4 */
 SELECT teachers.first_name AS [First Name], 
        teachers.last_name AS [Last Name], 
-       COUNT(courses.teachers_id) AS [Number of Courses Taught]
+       COUNT(courses.teachers_id) as [Number of Courses Taught]
 FROM teachers LEFT JOIN courses ON teachers.id=courses.teachers_id 
 GROUP BY teachers.id ORDER BY teachers.id
  
 /* C3 */
 SELECT courses.name as [Course],
        teachers.school as [University],
-       courses.total_students [Number of Students Enrolling],
-       teachers.first_name AS [First Name], 
+       courses.total_students as [Number of Students Enrolling],
+       teachers.first_name as [First Name], 
        teachers.last_name AS [Last Name], 
        MAX(teachers.salary) AS [Salary],
        teachers.hire_date as [Date Joined] 
