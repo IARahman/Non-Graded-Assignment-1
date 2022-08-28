@@ -109,5 +109,5 @@ SELECT courses.name as [Course],
        teachers.last_name AS [Last Name], 
        MAX(teachers.salary) AS [Salary],
        teachers.hire_date as [Date Joined] 
-from teachers JOIN courses ON teachers.id=courses.teachers_id
+FROM teachers JOIN courses ON teachers.id=courses.teachers_id
 GROUP BY courses.name ORDER BY courses.name
