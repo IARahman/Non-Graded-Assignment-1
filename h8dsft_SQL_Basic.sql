@@ -55,8 +55,8 @@ CREATE TABLE teachers (
             ('Biology', 14, 25),
             ('Calculus', 15, 20);
    
-select * from teachers
-select * from courses 
+SELECT * FROM teachers
+SELECT * FROM courses 
 
 /* C1.1 */
 SELECT first_name AS [First Name], 
